@@ -9,7 +9,7 @@ Homepage: https://metacpan.org/release/DR-Pager
 
 Package: libdr-pager-perl
 Architecture: all
-Depends: ${misc:Depends}, ${perl:Depends}
+Depends: ${misc:Depends}, ${perl:Depends}, libdata-page-perl
 Description: low level functions for Data::Page
  DR::Pager allows you use Data::Page without first set
  of total_entries. This mostly need for post get count
