@@ -15,10 +15,6 @@ WriteMakefile(
     },
     ABSTRACT_FROM  => 'lib/DR/Pager.pm',
     AUTHOR         => 'Dmitry E. Oboukhov <unera@debian.org>',
-    LIBS              => [],
-    DEFINE            => '',
-    INC               => '-I.',
-    OBJECT            => '$(O_FILES)',
     LICENSE           => 'artistic',
 );
 
