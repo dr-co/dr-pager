@@ -11,8 +11,6 @@ Package: libdr-pager-perl
 Architecture: all
 Depends: ${misc:Depends}, ${perl:Depends}
 Description: low level functions for Data::Page
- DR::Pager allows you use Data::Page without first set of total_entries. This
- mostly need for post get count queries (when you use cursors or
- calc_num_rows).
- .
- This description was automagically extracted from the module by dh-make-perl.
+ DR::Pager allows you use Data::Page without first set
+ of total_entries. This mostly need for post get count
+ queries (when you use cursors or calc_num_rows).
