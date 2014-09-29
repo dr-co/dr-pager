@@ -1,0 +1,5 @@
+libdr-pager-perl (0.1-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Dmitry E. Oboukhov <unera@debian.org>  Mon, 29 Sep 2014 15:51:40 +0400

@@ -1,0 +1,18 @@
+Source: libdr-pager-perl
+Section: perl
+Priority: optional
+Maintainer: Dmitry E. Oboukhov <unera@debian.org>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl
+Standards-Version: 3.9.5
+Homepage: https://metacpan.org/release/DR-Pager
+
+Package: libdr-pager-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: low level functions for Data::Page
+ DR::Pager allows you use Data::Page without first set of total_entries. This
+ mostly need for post get count queries (when you use cursors or
+ calc_num_rows).
+ .
+ This description was automagically extracted from the module by dh-make-perl.
