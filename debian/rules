@@ -1,4 +1,16 @@
 #!/usr/bin/make -f
 
+UVERSION    = $(shell dpkg-parsechangelog   \
+    |grep ^Version|awk '{print $$2}'        \
+    |sed 's/-[[:digit:]]\+//')
+
+DIRNAME	    = $(shell basename $(CURDIR))
+
 %:
 	dh $@
+
+tarball: clean
+	cd .. && \
+	tar --exclude=.git --exclude=debian \
+	    --transform='s,^$(DIRNAME),libdr-tarantool-perl-$(UVERSION),'   \
+	    -czf libdr-tarantool-perl_$(UVERSION).orig.tar.gz $(DIRNAME)
